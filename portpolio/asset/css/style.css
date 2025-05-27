@@ -87,7 +87,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #85979d;
+    background-color: #2e2e2e20;
     padding: 40px 10px;
 }
 
@@ -111,10 +111,16 @@ li {
 }
 
 .icon-skill{
-    background-color: aqua;
+    background-color: #2e2e2e;
     padding: 20px;
+    color: #ffff;
+    border-radius: 100%;
 }
 
 .skill-description{
     font-size: 2rem;
+}
+
+.desc{
+    margin-top: 20px;
 }
