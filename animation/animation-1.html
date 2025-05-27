@@ -23,33 +23,38 @@
             align-items: center;
         }
 
-        .bola{
+        .bola {
             width: 100px;
             height: 100px;
             background-color: #ff0000;
             border-radius: 100%;
-            animation: mantul 1s infinite ;
+            animation: mantul .5s infinite alternate;
         }
-        
+
 
         .judul {
             color: #ffff;
         }
 
-        .judul:hover{
+        .judul:hover {
             background-color: aqua;
             cursor: pointer;
-            transition: 3s ease-out;
-            
         }
+
+        .luar {
+            border: 1px #ffff solid;
+            width: 30%;
+            height: 10px;
+        }
+
 
         @keyframes mantul {
             0% {
-                transform: translate(0);
+                transform: translateY(-100px);
             }
 
-            50% {
-                transform: translateY(-200px);
+            100% {
+                transform: translateY(0) scaleX(1.2);
             }
         }
     </style>
@@ -64,6 +69,14 @@
             <h1>Animasi Bola Memantul</h1>
         </div>
     </div>
+
+    <div class="container">
+        <div class="loading">
+            <div class="luar"></div>
+            <div class="dalam"></div>
+        </div>
+    </div>
+
 </body>
 
 </html>
