@@ -85,23 +85,23 @@ li {
 .tentang {
     width: 100dvw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #2e2e2e20;
     padding: 40px 10px;
 }
 
 .skill-area{
-    width: 50%;
+    width: 30%;
     padding: 10px 5px;
 }
 
 .desc-area{
-    width: 50%;
+    width: 30%;
 }
 
 .card-skill{
-    width: 60%;
+    width: 80%;
     display: flex;
     gap: 40px;
     background: #ffff;
@@ -123,4 +123,13 @@ li {
 
 .desc{
     margin-top: 20px;
+}
+
+.project-count{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
 }
