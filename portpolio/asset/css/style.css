@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
 
-.container{
+.container {
     width: 80%;
     background-color: #ffff;
     /* box-shadow: 0 0 24px 0 #2e2e2e70; */
@@ -14,11 +14,11 @@
     border-radius: 8px;
 }
 
-.text-gray{
+.text-gray {
     color: #7d7d7d;
 }
 
-.nav{
+.nav {
     width: 100vw;
     height: 50px;
     background: #2e2e2e;
@@ -28,30 +28,29 @@
     flex-wrap: wrap;
 }
 
-.logo{
+.logo {
     color: #ffff;
 }
 
-ul{
+ul {
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-li{
+li {
     color: #ffff;
 }
 
-
-
-.hero{
+.hero {
     width: 100dvw;
     height: 80dvh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.content{
+.content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -60,6 +59,62 @@ li{
     gap: 40px;
 }
 
-.image-profile img{
-    width: 100px;
+.image-profile img {
+    width: 240px;
+    border-radius: 100%;
+    border: #2e2e2e90 8px solid;
+}
+
+.hero-title {
+    text-align: center;
+}
+
+.hero-title h1 {
+    margin-bottom: 10px;
+}
+
+.button-title a{
+    background-color: #2e2e2e;
+    padding: 9px 20px;
+    font-size: .7em;
+    color: #ffff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.tentang {
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85979d;
+    padding: 40px 10px;
+}
+
+.skill-area{
+    width: 50%;
+    padding: 10px 5px;
+}
+
+.desc-area{
+    width: 50%;
+}
+
+.card-skill{
+    width: 60%;
+    display: flex;
+    gap: 40px;
+    background: #ffff;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 10px;
+}
+
+.icon-skill{
+    background-color: aqua;
+    padding: 20px;
+}
+
+.skill-description{
+    font-size: 2rem;
 }
