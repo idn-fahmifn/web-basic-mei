@@ -74,6 +74,14 @@ li {
     margin-bottom: 10px;
 }
 
+.button-title{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .button-title a{
     background-color: #2e2e2e;
     padding: 9px 20px;
@@ -88,6 +96,7 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap-reverse;
     background-color: #2e2e2e20;
     padding: 40px 10px;
 }
@@ -145,9 +154,6 @@ li {
     font-weight: 700px;
 }
 
-.card{
-
-}
 
 .project {
     width: 100dvw;
@@ -217,4 +223,44 @@ li {
     color: #ffff;
     border-radius: 100%;
 }
+
+/* 
+responsive
+ */
+
+ @media screen and (max-width: 768px) {
+    .nav{
+        height: auto;
+        padding: 24px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-profile img{
+        width: 100px;
+    }
+
+    .tentang{
+        height: auto;
+        padding: 24px 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .desc-area{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skill-description{
+        font-size: 1.3rem;
+    }
+
+    .text-tentang{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+ }
+
 
