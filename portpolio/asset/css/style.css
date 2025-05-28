@@ -39,6 +39,16 @@ ul {
     list-style: none;
 }
 
+.nav-item{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    font-weight: 600;
+    background-color: #3a3a3a;
+}
+
 li {
     color: #ffff;
 }
