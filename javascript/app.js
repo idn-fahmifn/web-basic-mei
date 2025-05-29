@@ -536,14 +536,60 @@ let rumusSegitga = function(){
 // rumusSegitga();
 
 // arrow function
-let rumusLingkaran = (luas) => {
-    let = jari = 10;
-    const phi = 3.14;
+// let rumusLingkaran = () => {
+//     let jari = 10;
+//     const phi = 3.14;
 
-    luas == phi * jari * jari
+//     let luas = phi * jari * jari
+
+//     console.log(luas)
+// }
+// rumusLingkaran();
+
+// // function dengan parameter
+
+// // basic function
+// function sapa(ucapan, nama){
+//     console.log(`Selamat ${ucapan}, ${nama}!`);
+// }
+
+// // arrow function
+// let hello = (ucapan, nama) => { 
+//     console.log(`selamat ${ucapan}, mr ${nama}`)
+// }
+
+// hello('pagi', 'Fahmi'); // output memanggil function dengan parameter ucapan dan nama
+// sapa('pagi', 'Fathin');
+
+// DOM
+
+function tampilkanText(){
+    alert('Hallo, ini adalah contoh DOM manipulation');
 }
 
-rumusLingkaran();
+// memannggil elemen HTML dengan id hello
+document.getElementById('hello').innerText = 'lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+document.querySelector('.desc').innerText = 'saya sekarang sedang belajar javascript';
+
+let time = new Date().toLocaleTimeString(); // mendapatkan waktu saat ini
+document.querySelector('#jam').innerText = `Saat ini jam menunjukan pukul ${time}`;
+
+document.getElementById('button2').addEventListener('click', tampilkanText)
+
+
+function popUp(){
+    prompt('Masukan Nama Kamu');
+}
+
+document.getElementById('tampil').addEventListener('click', popUp); // menambahkan event listener pada elemen dengan id tampil, ketika diklik akan memanggil function popUp
+
+// popUp();
+
+
+
+
+
+
 
 
 
