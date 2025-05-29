@@ -568,22 +568,42 @@ function tampilkanText(){
 }
 
 // memannggil elemen HTML dengan id hello
-document.getElementById('hello').innerText = 'lorem ipsum dolor sit amet, consectetur adipiscing elit.';
-document.querySelector('.desc').innerText = 'saya sekarang sedang belajar javascript';
+// document.getElementById('hello').innerText = 'lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+// document.querySelector('.desc').innerText = 'saya sekarang sedang belajar javascript';
 
-let time = new Date().toLocaleTimeString(); // mendapatkan waktu saat ini
-document.querySelector('#jam').innerText = `Saat ini jam menunjukan pukul ${time}`;
+// let time = new Date().toLocaleTimeString(); // mendapatkan waktu saat ini
+// document.querySelector('#jam').innerText = `Saat ini jam menunjukan pukul ${time}`;
 
-document.getElementById('button2').addEventListener('click', tampilkanText)
+// document.getElementById('button2').addEventListener('click', tampilkanText)
 
 
-function popUp(){
-    prompt('Masukan Nama Kamu');
-}
 
-document.getElementById('tampil').addEventListener('click', popUp); // menambahkan event listener pada elemen dengan id tampil, ketika diklik akan memanggil function popUp
+
+// document.getElementById('tampil').addEventListener('click', popUp); // menambahkan event listener pada elemen dengan id tampil, ketika diklik akan memanggil function popUp
 
 // popUp();
+
+
+function persegiPanjang(){
+    let panjang = prompt('Masukkan panjang persegi panjang: ');
+    let lebar = prompt('Masukkan lebar persegi panjang: ');
+    let luas = panjang * lebar;
+    // alert(`Luas persegi panjang dengan panjang ${panjang} dan lebar ${lebar} adalah ${luas}`);
+    document.getElementById('hasil').innerText = luas;
+}
+
+
+// persegiPanjang()
+document.getElementById('popup').addEventListener('click', persegiPanjang); // menambahkan event listener pada elemen dengan id persegi, ketika diklik akan memanggil function persegiPanjang
+
+function persegi(){
+    let sisi = prompt('Masukkan panjang sisi persegi: ');
+    let luas = sisi * sisi;
+    // alert(`Luas persegi dengan sisi ${sisi} adalah ${luas}`);
+    document.getElementById('result').innerText = luas;
+}
+
+document.getElementById('persegi').addEventListener('click', persegi); // menambahkan event listener pada elemen dengan id persegi, ketika diklik akan memanggil function persegi
 
 
 
